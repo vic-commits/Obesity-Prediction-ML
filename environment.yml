@@ -1,0 +1,24 @@
+name: obesity-ml
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+
+  # Core scientific stack
+  - numpy>=1.24,<2.0
+  - pandas>=2.0,<3.0
+  - scipy>=1.10,<2.0
+
+  # Classical ML
+  - scikit-learn>=1.2,<2.0
+  - xgboost>=1.7,<2.0
+  - lightgbm>=4.0,<5.0
+
+  # Experiment tracking
+  - mlflow>=2.4,<3.0
+
+  # Logging / utilities
+  - tqdm
+  - pip:
+      - loguru>=0.7,<1.0
